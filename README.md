@@ -24,17 +24,31 @@ The overall goal of this project is to create a basic CRUD functionality of Acti
     $ bundle install
     ```
 
-4. Initialize the rspec tests using rails generate rspec:install command..
+4. Initialize the rspec tests using rails generate rspec:install command.
 
     ```shell
     $ rails generate rspec:install
     ```
+    
+5. Migrate DB
 
-5. Run RSpec.
+    ```shell
+    $ rake db:migrate
+    ```
+    
+6. Seed DB
+
+    ```shell
+    $ rake db:seed
+    ```
+    
+7. Run RSpec.
 
     ```shell
     $ rspec --format documentation
     ```
+
+8. Should be able to pass all tests.  A user login and can be found in the db:seed file.  For example: (username: "jim", password: "abc123").  Uses Ruby 2.4.10 and Rails 4.2.11.1
 
 ### Technical Requirements
 
